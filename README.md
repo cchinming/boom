@@ -17,7 +17,7 @@
 北京·北京·东城区	故宫	989946426	文化古迹	5A景区	热度 1.	116.403347,39.922148
 
     
-里面的部分代码也借鉴了其他网友的代码，其中的数据也是借鉴其他来源。若是有任何问题联系我的e-mail。我将及时删除！
+其中的数据由爬虫所得。若是有任何问题联系我的e-mail。我将及时删除！
 
-Inside the part of the code is not my original.if any questions,please contact my e-mail. I will be resolved in time
+if any questions,please contact my e-mail. I will be resolved in time
 
