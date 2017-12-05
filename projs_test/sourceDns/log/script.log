@@ -1,0 +1,1524 @@
+2017-12-04 14:05:28,586 WARNING Not Found: /accounts/profile/
+2017-12-04 14:06:32,509 WARNING Not Found: /accounts/profile/
+2017-12-04 14:11:42,434 WARNING Not Found: /a
+2017-12-04 14:11:45,258 WARNING Not Found: /
+2017-12-04 14:12:50,076 WARNING Not Found: /home/users
+2017-12-04 14:13:01,404 WARNING Not Found: /home/api-auth
+2017-12-04 14:13:56,842 WARNING Not Found: /
+2017-12-04 14:14:02,605 WARNING Not Found: /
+2017-12-04 14:25:57,757 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 12, in validate_even
+    if value % 2 != 0:
+TypeError: not all arguments converted during string formatting
+2017-12-04 14:26:27,842 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 12, in validate_even
+    if value % 2 != 0:
+TypeError: not all arguments converted during string formatting
+2017-12-04 14:27:04,736 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 12, in validate_even
+    if value % 2 != 0:
+TypeError: not all arguments converted during string formatting
+2017-12-04 14:53:49,842 ERROR Internal Server Error: /dns-records/10/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 16, in validate_zone
+    raise ValidationError('%s 不符合域名格式。正确格式应是：xxx.xx' % value)
+NameError: name 'value' is not defined
+2017-12-04 14:53:53,538 ERROR Internal Server Error: /dns-records/10/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 16, in validate_zone
+    raise ValidationError('%s 不符合域名格式。正确格式应是：xxx.xx' % value)
+NameError: name 'value' is not defined
+2017-12-04 14:53:54,707 ERROR Internal Server Error: /dns-records/10/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 16, in validate_zone
+    raise ValidationError('%s 不符合域名格式。正确格式应是：xxx.xx' % value)
+NameError: name 'value' is not defined
+2017-12-04 15:09:37,003 ERROR Internal Server Error: /dns-records/10/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 13, in validate_zone
+    if len(zone_splite) != 3:
+NameError: name 'zone_splite' is not defined
+2017-12-04 15:10:22,618 ERROR Internal Server Error: /dns-records/10/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 18, in validate_zone
+    if re.findall(zone_compile[i],zone_spilt[i]):
+NameError: name 'zone_spilt' is not defined
+2017-12-04 16:16:07,185 ERROR Internal Server Error: /dns-records/1/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+TypeError: validate_zone() missing 1 required positional argument: 'zone'
+2017-12-04 16:17:45,402 ERROR Internal Server Error: /dns-records/1/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+TypeError: validate_zone() missing 1 required positional argument: 'zone'
+2017-12-04 16:23:25,462 ERROR Internal Server Error: /dns-records/1/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 60, in clean
+    clean_data = super (records, self).clean()
+TypeError: super(type, obj): obj must be an instance or subtype of type
+2017-12-04 16:34:07,671 ERROR Internal Server Error: /dns-records/1/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 60, in clean
+    cleaned_data = super (records, self).clean()
+TypeError: super(type, obj): obj must be an instance or subtype of type
+2017-12-05 09:54:11,420 WARNING Not Found: /favicon.ico
+2017-12-05 10:01:35,124 WARNING Not Found: /dns-records/12/
+2017-12-05 10:01:45,096 ERROR Internal Server Error: /Verify/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/projs_test/api/views.py", line 19, in Verify
+    if zone !='www.ww':
+NameError: name 'zone' is not defined
+2017-12-05 10:02:09,253 WARNING Not Found: /dns-records/12/
+2017-12-05 10:02:43,144 WARNING Not Found: /dns-records/12/
+2017-12-05 10:03:03,687 WARNING Not Found: /dns-records/12/
+2017-12-05 10:16:23,562 WARNING Not Found: /api/2/
+2017-12-05 10:23:29,554 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 47, in save
+    raise ValidationError('pass')
+django.core.exceptions.ValidationError: ['pass']
+2017-12-05 10:24:55,768 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 47, in save
+    raise ValueError('pass')
+ValueError: pass
+2017-12-05 10:26:59,329 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    clean(self)
+NameError: name 'clean' is not defined
+2017-12-05 10:29:23,080 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    self.records.clean()
+AttributeError: 'records' object has no attribute 'records'
+2017-12-05 10:30:05,129 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean()
+TypeError: clean() missing 1 required positional argument: 'self'
+2017-12-05 10:30:46,574 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 44, in clean
+    raise ValidationError('$asdfwecx21')
+django.core.exceptions.ValidationError: ['$asdfwecx21']
+2017-12-05 10:31:45,418 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 44, in clean
+    raise ValidationError('$asdfwecx21')
+django.core.exceptions.ValidationError: ['$asdfwecx21']
+2017-12-05 10:50:41,071 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 40, in save
+    raise ValidationError('zone')
+django.core.exceptions.ValidationError: ['zone']
+2017-12-05 10:51:32,160 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 40, in save
+    raise ValidationError(_('zone'))
+django.core.exceptions.ValidationError: ['zone']
+2017-12-05 14:15:49,681 WARNING Not Found: /favicon.ico
+2017-12-05 14:18:49,663 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 45, in clean
+    records.validate_host(host)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 78, in validate_host
+    raise ValidationError('%s含有非法字符。 只能包含数字，字母（大小写）.' % host)
+django.core.exceptions.ValidationError: ['www.含有非法字符。 只能包含数字，字母（大小写）.']
+2017-12-05 14:19:28,143 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in clean
+    records.validate_type_and_data(type, data)	#type and data format
+  File "/home/zhangzm/projs_test/api/models.py", line 87, in validate_type_and_data
+    raise ValidationError('type:%s data:%s no match' %(type, data))
+django.core.exceptions.ValidationError: ['type:A data:a df no match']
+2017-12-05 14:19:55,529 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 45, in clean
+    records.validate_host(host)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 78, in validate_host
+    raise ValidationError('%s含有非法字符。 只能包含数字，字母（大小写）.' % host)
+django.core.exceptions.ValidationError: ['www.含有非法字符。 只能包含数字，字母（大小写）.']
+2017-12-05 14:30:17,962 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 44, in clean
+    records.validate_zone(zone)	#zone format
+  File "/home/zhangzm/projs_test/api/models.py", line 72, in validate_zone
+    raise ValidationError('%s  %s '% (zone_split[i],error_message[i]))
+django.core.exceptions.ValidationError: ['ca!  后缀包含非>法字符，只能包含a-z ']
+2017-12-05 14:35:11,654 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:35:11,688 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:35:11,721 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:35:11,749 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:35:11,801 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:35:11,837 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:35:11,860 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:35:11,893 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:35:11,937 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:35:11,961 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:35:29,518 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:35:29,551 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:35:29,581 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:35:29,619 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:35:29,676 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:35:29,705 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:35:29,738 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:35:29,770 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:35:29,795 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:35:29,834 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:35:33,118 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:35:33,160 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:35:33,201 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:35:33,232 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:35:33,264 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:35:33,300 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:35:33,326 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:35:33,365 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:35:33,391 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:35:33,411 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:35:41,158 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:35:41,194 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:35:41,220 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:35:41,254 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:35:41,317 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:35:41,341 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:35:41,365 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:35:41,401 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:35:41,426 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:35:41,458 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:35:52,576 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:35:52,626 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:35:52,658 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:35:52,697 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:35:52,749 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:35:52,792 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:35:52,821 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:35:52,885 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:35:52,909 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:35:52,936 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:35:52,960 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:35:52,994 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:35:53,046 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:35:53,097 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:35:53,178 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:36:22,576 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:36:22,610 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:36:22,660 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:36:22,697 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:36:22,722 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:36:22,757 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:36:22,811 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:36:22,845 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:36:22,884 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:36:22,903 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:36:22,932 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:36:22,964 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:36:22,986 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:36:23,035 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:36:23,120 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:36:23,163 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:36:47,568 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:36:47,590 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:36:47,624 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:36:47,648 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:36:47,682 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:36:47,705 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:36:47,760 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:36:47,795 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:36:47,820 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:36:47,843 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:36:47,868 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:36:47,902 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:36:47,940 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:36:47,983 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:36:48,079 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:36:48,111 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:37:03,602 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:37:03,632 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:37:03,676 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:37:03,697 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:37:03,732 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:37:03,764 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:37:03,828 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:37:03,841 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:37:03,866 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:37:03,897 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:37:03,917 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:37:03,960 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:37:03,997 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:37:04,027 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:37:04,063 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:37:04,147 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:37:41,042 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:37:41,070 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:37:41,084 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:37:41,124 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:37:41,143 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:37:41,170 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:37:41,217 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:37:41,243 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:37:41,260 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:37:41,282 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:37:41,310 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:37:41,331 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:37:41,355 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:37:41,380 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:37:41,407 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:37:41,433 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:03,959 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:03,985 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:04,015 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:38:04,048 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:38:04,067 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:38:04,090 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:38:04,133 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:04,158 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:04,176 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:04,209 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:04,230 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:04,265 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:04,294 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:04,305 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:04,330 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:04,370 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:12,441 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:12,471 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:12,494 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:38:12,538 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:38:12,544 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:38:12,573 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:38:12,605 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:12,657 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:12,673 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:12,691 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:12,718 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:12,740 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:12,761 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:12,779 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:12,801 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:12,838 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:16,867 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:16,890 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:16,923 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:38:16,950 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:38:16,967 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:38:16,988 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:38:17,033 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:17,068 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:17,082 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:17,099 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:17,139 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:17,166 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:17,192 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:17,240 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:17,317 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:17,323 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:25,802 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:25,829 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:25,846 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:38:25,878 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:38:25,909 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:38:25,945 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:38:25,987 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:26,015 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:26,040 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:26,063 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:26,085 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:26,106 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:26,142 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:26,169 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:26,192 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:26,221 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:38,279 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:38,302 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:38,332 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:38:38,361 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:38:38,382 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:38:38,408 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:38:38,454 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:38,479 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:38,497 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:38,524 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:38,542 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:38,568 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:38,592 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:38,612 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:38,637 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:38,682 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:50,815 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:50,840 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:50,868 WARNING Not Found: /static/rest_framework/css/default.css
+2017-12-05 14:38:50,885 WARNING Not Found: /static/rest_framework/css/prettify.css
+2017-12-05 14:38:50,914 WARNING Not Found: /static/rest_framework/css/bootstrap-tweaks.css
+2017-12-05 14:38:50,934 WARNING Not Found: /static/rest_framework/css/bootstrap.min.css
+2017-12-05 14:38:50,980 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:51,000 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:51,023 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:51,042 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:38:51,061 WARNING Not Found: /static/rest_framework/js/jquery-1.12.4.min.js
+2017-12-05 14:38:51,096 WARNING Not Found: /static/rest_framework/js/ajax-form.js
+2017-12-05 14:38:51,130 WARNING Not Found: /static/rest_framework/js/csrf.js
+2017-12-05 14:38:51,143 WARNING Not Found: /static/rest_framework/js/bootstrap.min.js
+2017-12-05 14:38:51,166 WARNING Not Found: /static/rest_framework/js/prettify-min.js
+2017-12-05 14:38:51,188 WARNING Not Found: /static/rest_framework/js/default.js
+2017-12-05 14:40:44,507 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 44, in clean
+    records.validate_zone(zone)	#zone format
+  File "/home/zhangzm/projs_test/api/models.py", line 72, in validate_zone
+    raise ValidationError('%s  %s '% (zone_split[i],error_message[i]))
+django.core.exceptions.ValidationError: ['ca!  后缀包含非>法字符，只能包含a-z ']
+2017-12-05 15:05:25,895 WARNING Not Found: /favicon.ico
+2017-12-05 15:05:41,228 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in clean
+    records.validate_type_and_data(type, data)	#type and data format
+  File "/home/zhangzm/projs_test/api/models.py", line 95, in validate_type_and_data
+    raise ValidationError('type:%s data:%s no match' %(type, data))
+django.core.exceptions.ValidationError: ['type:CNAME data:1.3.2.6 no match']
+2017-12-05 15:07:30,966 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 45, in clean
+    records.validate_host(host)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 78, in validate_host
+    raise forms.ValidationError('%s含有非法字符。 只能包含数字，字母（大小写）.' % host)
+django.core.exceptions.ValidationError: ['www.含有非法字符。 只能包含数字，字母（大小写）.']
+2017-12-05 15:30:30,442 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 39, in clean
+    records.validate_zone(self)	#zone format
+  File "/home/zhangzm/projs_test/api/models.py", line 60, in validate_zone
+    正确格式应是：xxx.xx' % zone)
+django.core.exceptions.ValidationError: ['aaa.ca1. 不符合域名格式。                                   正确格式应是：xxx.xx']
+2017-12-05 15:34:31,810 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 39, in clean
+    records.validate_zone(self)	#zone format
+  File "/home/zhangzm/projs_test/api/models.py", line 70, in validate_zone
+    raise forms.ValidationError('%s  %s '% (zone_split[i],error_message[i]))
+django.core.exceptions.ValidationError: ['ca1  后缀包含非>法字符，只能包含a-z ']
+2017-12-05 15:34:46,275 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 40, in clean
+    records.validate_host(self)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 80, in validate_host
+    clean_host = self.clean_data['host']
+AttributeError: 'records' object has no attribute 'clean_data'
+2017-12-05 16:11:54,735 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 41, in clean
+    records.clean_type_and_data(self)	#type and data format
+TypeError: clean_type_and_data() missing 1 required positional argument: 'data'
+2017-12-05 16:13:17,115 ERROR Internal Server Error: /dns-records/13/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 41, in clean
+    records.clean_type_and_data(self)	#type and data format
+  File "/home/zhangzm/projs_test/api/models.py", line 106, in clean_type_and_data
+    raise ValidationError('type:%s data:%s no match' %(type, data))
+django.core.exceptions.ValidationError: ['type:CNAME data:1.3.2.6 no match']
+2017-12-05 16:30:15,017 ERROR Internal Server Error: /dns-records/14/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 40, in clean
+    records.validate_host(self)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 83, in validate_host
+    raise forms.ValidationError("%s.%s 已存在"%(host,zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.com 已存在']
+2017-12-05 16:30:45,306 ERROR Internal Server Error: /dns-records/14/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 40, in clean
+    records.validate_host(self)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 82, in validate_host
+    if records.objects.get(zone=zone, host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+2017-12-05 16:36:24,277 ERROR Internal Server Error: /dns-records/14/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 40, in clean
+    records.validate_host(self)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 82, in validate_host
+    if not records.objects.get(zone=zone, host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+2017-12-05 16:41:14,823 ERROR Internal Server Error: /dns-records/14/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 40, in clean
+    records.validate_host(self)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 87, in validate_host
+    raise ValidationError('%s.%s exist!'%(host, zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.com exist!']
+2017-12-05 16:45:34,310 ERROR Internal Server Error: /dns-records/14/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 40, in clean
+    records.validate_host(self)	#host format
+  File "/home/zhangzm/projs_test/api/models.py", line 87, in validate_host
+    raise ValidationError('%s.%s exist!'%(host, zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.co exist!']
+2017-12-05 17:18:23,903 WARNING Not Found: /favicon.ico
+2017-12-05 17:18:32,722 ERROR Internal Server Error: /dns-records/14/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 46, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 41, in clean
+    records.clean_type_and_data(self)	#type and data format
+  File "/home/zhangzm/projs_test/api/models.py", line 116, in clean_type_and_data
+    raise ValidationError('%s is existed!'% data)
+django.core.exceptions.ValidationError: ['1.1.1.9 is existed!']

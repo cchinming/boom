@@ -1,0 +1,5 @@
+2017-12-04 08:56:20,531 [Dummy-1:139666849666816] [sourceDns.webdns.views:18] [views:<module>] [ERROR]- name 'connectMysql' is not defined
+2017-12-04 09:41:27,618 ERROR name 'connectMysql' is not defined
+2017-12-04 09:51:48,670 ERROR name 'MySQLdb' is not defined
+2017-12-04 09:54:37,631 ERROR name 'pymysql' is not defined
+2017-12-04 09:55:48,803 ERROR 'NoneType' object has no attribute 'encoding'
