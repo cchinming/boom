@@ -22,14 +22,16 @@ from api import views
 router=DefaultRouter()
 router.register(r'dns-records',views.RecordsViewSet)
 router.register(r'users',views.UserViewSet)
+#router.register(r'register', views.UserRegViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
+    #url(r'dns-records/(?P<username>.+)/$', views.SearchList.as_view()),
     #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-   # url(r'^',),
+    url(r'^register',views.UserRegis.as_view()),
+    #url(r'^api/(?P<pk>[0-9]+)/$',views.RecordsDetail.as_view()),
     url(r'^',include(router.urls)),
-    url(r'^Verify/$',views.Verify),
+   # url(r'^Verify/$',views.Verify)
 ]
 
 urlpatterns += [

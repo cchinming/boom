@@ -1522,3 +1522,2025 @@ Traceback (most recent call last):
   File "/home/zhangzm/projs_test/api/models.py", line 116, in clean_type_and_data
     raise ValidationError('%s is existed!'% data)
 django.core.exceptions.ValidationError: ['1.1.1.9 is existed!']
+2017-12-06 08:58:46,305 ERROR Internal Server Error: /dns-records/14/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 47, in clean
+    return clean_data.get('type')
+AttributeError: 'NoneType' object has no attribute 'get'
+2017-12-06 09:40:32,196 ERROR Internal Server Error: /dns-records/14/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 47, in clean
+    return clean_data.get('type')
+AttributeError: 'NoneType' object has no attribute 'get'
+2017-12-06 09:40:50,216 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 35, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 51, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 47, in clean
+    return clean_data.get('type')
+AttributeError: 'NoneType' object has no attribute 'get'
+2017-12-06 09:57:38,500 ERROR Internal Server Error: /dns-records/15/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+TypeError: validate_zone() missing 1 required positional argument: 'zone'
+2017-12-06 09:58:54,185 ERROR Internal Server Error: /dns-records/15/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 20, in validate_zone
+    zone = self.zone
+AttributeError: 'str' object has no attribute 'zone'
+2017-12-06 10:00:48,303 ERROR Internal Server Error: /dns-records/15/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 20, in validate_zone
+    zone = self.zone
+AttributeError: 'str' object has no attribute 'zone'
+2017-12-06 10:01:58,650 ERROR Internal Server Error: /dns-records/15/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 20, in validate_zone
+    zone = self.zone
+AttributeError: 'str' object has no attribute 'zone'
+2017-12-06 10:02:10,301 ERROR Internal Server Error: /dns-records/15/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 20, in validate_zone
+    zone = self.zone
+AttributeError: 'str' object has no attribute 'zone'
+2017-12-06 10:43:53,527 ERROR Internal Server Error: /dns-records/15/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 431, in run_validation
+    value = self.to_internal_value(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 461, in to_internal_value
+    validated_value = field.run_validation(primitive_value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 776, in run_validation
+    return super(CharField, self).run_validation(data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 524, in run_validation
+    self.run_validators(value)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/fields.py", line 538, in run_validators
+    validator(value)
+  File "/home/zhangzm/projs_test/api/models.py", line 39, in validate_data
+    raise ValueError('%(data)s is already existed! please retry! ')
+ValueError: %(data)s is already existed! please retry! 
+2017-12-06 11:13:18,956 ERROR Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 378, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 316, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'records-detail' not found. 'records-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
+    return self.list(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 738, in data
+    ret = super(ListSerializer, self).data
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "records-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2017-12-06 11:13:26,759 ERROR Internal Server Error: /
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 378, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 316, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'records-detail' not found. 'records-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
+    return self.list(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 738, in data
+    ret = super(ListSerializer, self).data
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "records-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2017-12-06 11:13:47,373 ERROR Internal Server Error: /dns_records/1
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 378, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 316, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'records-detail' not found. 'records-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
+    return self.list(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 738, in data
+    ret = super(ListSerializer, self).data
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "records-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2017-12-06 11:13:50,627 ERROR Internal Server Error: /dns_records/2
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 378, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 316, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'records-detail' not found. 'records-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
+    return self.list(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 738, in data
+    ret = super(ListSerializer, self).data
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "records-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2017-12-06 11:17:41,039 ERROR Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 378, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 316, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'records-detail' not found. 'records-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
+    return self.list(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 738, in data
+    ret = super(ListSerializer, self).data
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "records-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2017-12-06 11:17:47,339 WARNING Not Found: /
+2017-12-06 11:17:53,409 ERROR Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 378, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 316, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'records-detail' not found. 'records-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
+    return self.list(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 738, in data
+    ret = super(ListSerializer, self).data
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "records-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2017-12-06 11:18:22,815 ERROR Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 378, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 316, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'records-detail' not found. 'records-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
+    return self.list(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 738, in data
+    ret = super(ListSerializer, self).data
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "records-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2017-12-06 11:18:27,254 WARNING Not Found: /
+2017-12-06 11:19:46,448 ERROR Internal Server Error: /api/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 378, in to_representation
+    url = self.get_url(value, self.view_name, request, format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 316, in get_url
+    return self.reverse(view_name, kwargs=kwargs, request=request, format=format)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 50, in reverse
+    url = _reverse(viewname, args, kwargs, request, format, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/reverse.py", line 63, in _reverse
+    url = django_reverse(viewname, args=args, kwargs=kwargs, **extra)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/urls/resolvers.py", line 497, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'records-detail' not found. 'records-detail' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/generics.py", line 241, in get
+    return self.list(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 738, in data
+    ret = super(ListSerializer, self).data
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 656, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/relations.py", line 393, in to_representation
+    raise ImproperlyConfigured(msg % self.view_name)
+django.core.exceptions.ImproperlyConfigured: Could not resolve URL for hyperlinked relationship using view name "records-detail". You may have failed to include the related model in your API, or incorrectly configured the `lookup_field` attribute on this field.
+2017-12-06 15:06:19,134 WARNING Not Found: /favicon.ico
+2017-12-06 15:59:16,193 ERROR Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/projs_test/api/views.py", line 52, in list
+    queryset = models.records.objects.all()
+NameError: name 'models' is not defined
+2017-12-06 15:59:43,342 ERROR Internal Server Error: /search/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/projs_test/api/views.py", line 52, in list
+    queryset = models.records.objects.all()
+NameError: name 'models' is not defined
+2017-12-06 16:06:50,577 WARNING Not Found: /search/
+2017-12-06 16:07:35,469 WARNING Not Found: /search/
+2017-12-06 16:09:26,939 WARNING Not Found: /search/
+2017-12-06 16:09:34,116 WARNING Not Found: /search/
+2017-12-06 16:09:55,955 ERROR Internal Server Error: /search/"baidu"/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2017-12-06 16:10:10,002 WARNING Not Found: /search/
+2017-12-06 16:10:22,045 WARNING Not Found: /search
+2017-12-06 16:55:24,986 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 72, in clean
+    if records.objects.get(id=id, data=data):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 78, in save
+    records.clean(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 75, in clean
+    raise ValidationError('what??')
+django.core.exceptions.ValidationError: ['what??']
+2017-12-06 17:14:01,288 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 92, in save
+    records.clean_data(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 64, in clean_data
+    data  = self.date
+AttributeError: 'records' object has no attribute 'date'
+2017-12-06 17:14:41,302 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 92, in save
+    records.clean_data(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 74, in clean_data
+    raise ValidationError('%s : %s  no match each other.\teg: A:8.8.8.8;CNAME:www'%(type, data))
+django.core.exceptions.ValidationError: ['CNAME : 5.5.5.5  no match each other.\teg: A:8.8.8.8;CNAME:www']
+2017-12-06 17:15:20,454 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 85, in clean_data
+    if records.objects.get(id=id,type=type, data=data):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/root/.pyenv/versions/3.6.3/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 92, in save
+    records.clean_data(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 88, in clean_data
+    raise ValidationError('%s is already existed in another field!' %data)
+django.core.exceptions.ValidationError: ['5.5.5.5 is already existed in another field!']
+2017-12-07 08:57:46,997 WARNING Not Found: /favicon.ico
+2017-12-07 08:58:21,372 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 117, in clean_dt
+    if records.objects.get(id=id,type=type, data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 124, in save
+    records.clean_dt(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 120, in clean_dt
+    raise ValidationError('%s is already existed in another field!' %data)
+django.core.exceptions.ValidationError: ['5.5.5.5 is already existed in another field!']
+2017-12-07 08:58:40,155 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 117, in clean_dt
+    if records.objects.get(id=id,type=type, data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 124, in save
+    records.clean_dt(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 120, in clean_dt
+    raise ValidationError('%s is already existed in another field!' %data)
+django.core.exceptions.ValidationError: ['1.3.6.6 is already existed in another field!']
+2017-12-07 08:58:49,730 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 117, in clean_dt
+    if records.objects.get(id=id,type=type, data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 124, in save
+    records.clean_dt(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 120, in clean_dt
+    raise ValidationError('%s is already existed in another field!' %data)
+django.core.exceptions.ValidationError: ['1.3.6.6 is already existed in another field!']
+2017-12-07 09:05:34,661 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 70, in clean_dzh
+    if records.objects.get(zone=zone,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 384, in get
+    (self.model._meta.object_name, num)
+api.models.MultipleObjectsReturned: get() returned more than one records -- it returned 2!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 125, in save
+    records.clean_dzh(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 73, in clean_dzh
+    raise ValidationError('Unknown Error')
+django.core.exceptions.ValidationError: ['Unknown Error']
+2017-12-07 09:06:12,422 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 76, in clean_dzh
+    if records.objects.get(id=id,zone=zone,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 125, in save
+    records.clean_dzh(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 79, in clean_dzh
+    raise ValidationError("%s.%s is already existed in other field.please rewrite host or zone"%(host,zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.com is already existed in other field.please rewrite host or zone']
+2017-12-07 09:07:22,647 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 124, in save
+    records.clean_dt(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 106, in clean_dt
+    raise ValidationError('%s : %s  no match each other.\teg: A:8.8.8.8;CNAME:www'%(type, data))
+django.core.exceptions.ValidationError: ['CNAME : 1.3.6.5  no match each other.\teg: A:8.8.8.8;CNAME:www']
+2017-12-07 09:08:12,956 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 70, in clean_dzh
+    if records.objects.get(zone=zone,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 125, in save
+    records.clean_dzh(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 73, in clean_dzh
+    raise ValidationError('Unknown Error')
+django.core.exceptions.ValidationError: ['Unknown Error']
+2017-12-07 09:08:56,208 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 70, in clean_dzh
+    if records.objects.get(zone=zone,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 125, in save
+    records.clean_dzh(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 73, in clean_dzh
+    raise ValidationError('Unknown Error')
+django.core.exceptions.ValidationError: ['Unknown Error']
+2017-12-07 09:11:51,585 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 70, in clean_dzh
+    if records.objects.get(zone=zone,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 125, in save
+    records.clean_dzh(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 73, in clean_dzh
+    raise ValidationError('%s'%e)
+django.core.exceptions.ValidationError: ['records matching query does not exist.']
+2017-12-07 09:16:32,460 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 76, in clean_dzh
+    if records.objects.get(id=id,zone=zone,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 125, in save
+    records.clean_dzh(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 79, in clean_dzh
+    raise ValidationError("%s.%s is already existed in other field.please rewrite host or zone"%(host,zone))
+django.core.exceptions.ValidationError: ['test.isstaff.com is already existed in other field.please rewrite host or zone']
+2017-12-07 09:17:00,425 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 88, in clean_dzh
+    if records.objects.get(id=id,zone=zone,data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 125, in save
+    records.clean_dzh(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 91, in clean_dzh
+    raise ValidationError("%s.%s is already existed in other field.please rewrite data or zoen"%(data,zone))
+django.core.exceptions.ValidationError: ['www.isstaff.com is already existed in other field.please rewrite data or zoen']
+2017-12-07 09:17:24,177 ERROR Internal Server Error: /dns-records/16/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 954, in update
+    instance.save()
+  File "/home/zhangzm/projs_test/api/models.py", line 124, in save
+    records.clean_dt(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 106, in clean_dt
+    raise ValidationError('%s : %s  no match each other.\teg: A:8.8.8.8;CNAME:www'%(type, data))
+django.core.exceptions.ValidationError: ['A : www  no match each other.\teg: A:8.8.8.8;CNAME:www']
+2017-12-07 11:02:01,302 WARNING Not Found: /d
+2017-12-07 13:22:49,114 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 40, in list
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/generics.py", line 152, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 51, in filter_queryset
+    filter_class = self.get_filter_class(view, queryset)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django_filters/rest_framework/backends.py", line 41, in get_filter_class
+    class AutoFilterSet(self.default_filter_set):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django_filters/filterset.py", line 90, in __new__
+    new_class.base_filters = new_class.get_filters()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django_filters/filterset.py", line 335, in get_filters
+    "%s" % ', '.join(undefined)
+TypeError: 'Meta.fields' contains fields that are not defined on this FilterSet: $host, $zone, $type, $data
+2017-12-07 14:11:30,724 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 31, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 124, in save
+    records.clean_dt(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 106, in clean_dt
+    raise ValidationError('%s   %s  no match each other.\teg: A:8.8.8.8;CNAME:www'%(type, data))
+django.core.exceptions.ValidationError: ['CNAME   2.3.3.1  no match each other.\teg: A:8.8.8.8;CNAME:www']
+2017-12-07 14:55:14,773 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 31, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 163, in save
+    records.clean_dt(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 145, in clean_dt
+    raise ValidationError('%s   %s  no match each other.\teg: A:8.8.8.8;CNAME:www'%(type, data))
+django.core.exceptions.ValidationError: ['CNAME   2.3.3.1  no match each other.\teg: A:8.8.8.8;CNAME:www']
+2017-12-07 15:08:30,370 ERROR Internal Server Error: /dns-records/2/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 202, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 1057, in _read_query_result
+    result.read()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'db_lltest.django_session' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 477, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 394, in initial
+    self.perform_authentication(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 320, in perform_authentication
+    request.user
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/request.py", line 381, in __getattribute__
+    return super(Request, self).__getattribute__(attr)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/request.py", line 196, in user
+    self._authenticate()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/request.py", line 345, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/authentication.py", line 127, in authenticate
+    if not user or not user.is_active:
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/utils/functional.py", line 386, in _setup
+    self._wrapped = self._setupfunc()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/contrib/auth/middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 210, in get_user
+    user_id = _get_user_session_key(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/contrib/auth/__init__.py", line 61, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 57, in __getitem__
+    return self._session[key]
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 207, in _get_session
+    self._session_cache = self.load()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/contrib/sessions/backends/db.py", line 35, in load
+    expire_date__gt=timezone.now()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 374, in get
+    num = len(clone)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 894, in execute_sql
+    raise original_exception
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 884, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 856, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 1057, in _read_query_result
+    result.read()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 1340, in read
+    first_packet = self.connection._read_packet()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 1014, in _read_packet
+    packet.check_error()
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'db_lltest.django_session' doesn't exist")
+2017-12-07 15:44:37,184 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 59, in clean_zone
+    if records.objects.get(id=id, zone=zone, host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 21, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 94, in save
+    records.clean_zone(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 62, in clean_zone
+    raise ValidationError('%s.%s is already existed!'%(host,zone))
+django.core.exceptions.ValidationError: ['www3.baidu.cam is already existed!']
+2017-12-07 15:44:52,879 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 21, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 93, in save
+    records.clean_data(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 82, in clean_data
+    raise ValidationError('!!wrong')
+django.core.exceptions.ValidationError: ['!!wrong']
+2017-12-07 15:55:02,567 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 65, in clean_zone
+    if records.objects.get(zone=zone, data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 69, in clean_zone
+    if records.objects.get(id=id,zone=zone,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 27, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 94, in save
+    records.clean_zone(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 72, in clean_zone
+    raise ValidationError('%s.%s is already existed!'%(data,zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.com is already existed!']
+2017-12-07 15:55:54,614 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 65, in clean_zone
+    if records.objects.get(zone=zone, data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 69, in clean_zone
+    if records.objects.get(id=id,zone=zone,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 27, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 94, in save
+    records.clean_zone(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 72, in clean_zone
+    raise ValidationError('%s.%s is already existed!'%(data,zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.com is already existed!']
+2017-12-07 15:56:45,964 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 65, in clean_zone
+    if records.objects.get(zone=zone, data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 69, in clean_zone
+    if records.objects.get(id=id,data=data,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 27, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 94, in save
+    records.clean_zone(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 72, in clean_zone
+    raise ValidationError('%s.%s is already existed!'%(data,zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.com is already existed!']
+2017-12-07 15:56:58,205 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 65, in clean_zone
+    if records.objects.get(zone=zone, data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 69, in clean_zone
+    if records.objects.get(id=id,data=data,host=host):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 27, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 94, in save
+    records.clean_zone(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 72, in clean_zone
+    raise ValidationError('%s.%s is already existed!'%(data,zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.com is already existed!']
+2017-12-07 15:57:44,595 ERROR Internal Server Error: /dns-records/
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 65, in clean_zone
+    if records.objects.get(zone=zone, data=data):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/projs_test/api/models.py", line 69, in clean_zone
+    if records.objects.get(id=id,data=data,zone=zone):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+api.models.DoesNotExist: records matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/viewsets.py", line 90, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/zhangzm/projs_test/api/views.py", line 27, in perform_create
+    serializer.save(owner=self.request.user)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/serializers.py", line 913, in create
+    instance = ModelClass.objects.create(**validated_data)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/db/models/query.py", line 394, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/zhangzm/projs_test/api/models.py", line 94, in save
+    records.clean_zone(self)
+  File "/home/zhangzm/projs_test/api/models.py", line 72, in clean_zone
+    raise ValidationError('%s.%s is already existed!'%(data,zone))
+django.core.exceptions.ValidationError: ['chanpin.lupu.com is already existed!']
+2017-12-07 17:00:03,571 ERROR Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/zhangzm/文档/projs/ENV_TEST/lib/python3.6/site-packages/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/zhangzm/projs_test/api/views.py", line 43, in post
+    serializer = UserRegisterSerializer(data=data)
+NameError: name 'UserRegisterSerializer' is not defined
